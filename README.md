@@ -1,7 +1,10 @@
 # ExplorersVEsNA
 Making VEsNA agents good explorers project
+
 Author: Lina-Chemeliine Titova
+
 Course: SYMBOLIC AND DISTRIBUTED ARTIFICIAL INTELLIGENCE
+
 Project delivered on June 2026
 
 Setup & Architecture
