@@ -1,0 +1,133 @@
+mas vesna {
+
+    agent alice:alice.asl {
+        beliefs:    address( localhost )
+                    port( 9081 )
+        goals:      start
+        ag-class:   vesna.VesnaAgent
+        join:       wp
+    }
+
+    //agent bob:bob.asl {
+    //    beliefs:    address( localhost )
+    //                port( 9080 )
+    //    goals:      start
+    //    ag-class:   vesna.VesnaAgent
+    //    join:       wp
+    //}
+
+    //agent charlie:charlie.asl {
+     //   beliefs:    address( localhost )
+      //              port( 9082 )
+      //  goals:      start
+     //   ag-class:   vesna.VesnaAgent
+     //   join:       wp
+  //  }
+
+    //agent david:david.asl {
+   //     beliefs:    address( localhost )
+    //                port( 9083 )
+    //    goals:      start
+     //   ag-class:   vesna.VesnaAgent
+     //   join:       wp
+ //   }
+
+    workspace wp {
+        artifact coffee_machine: vesna.playgrounds.office.CoffeeMachine( "common", 1 )
+        artifact cup1: vesna.playgrounds.office.Cup( "common" )
+        artifact cup2: vesna.playgrounds.office.Cup( "common" )
+        artifact cup3: vesna.playgrounds.office.Cup( "common" )
+    }
+    
+    //agent blue1:player.asl {
+     //   beliefs:    address( localhost )
+     //               port( 9080 )
+     //               team( blue )
+     //               propension( defensive )
+     //   goals:      start
+     //   ag-class:   vesna.VesnaAgent
+    //}
+
+   //  agent blue2:player.asl {
+    //     beliefs:    address( localhost )
+     //                port( 9081 )
+    //                 team( blue )
+    //                 propension( defensive )
+    //     goals:      start
+    //     ag-class:   vesna.VesnaAgent
+    //}
+
+     //agent blue3:player.asl {
+     //    beliefs:    address( localhost )
+     //                port( 9082 )
+     //                team( blue )
+      //               propension( offensive )
+     //    goals:      start
+     //    ag-class:   vesna.VesnaAgent
+     //}
+
+    // agent blue4:player.asl {
+    //     beliefs:    address( localhost )
+    //                 port( 9083 )
+    //                 team( blue )
+    //                 propension( defensive )
+    //     goals:      start
+    //     ag-class:   vesna.VesnaAgent
+    // }
+
+    // agent blue5:player.asl {
+    //     beliefs:    address( localhost )
+    //                 port( 9084 )
+    //                 team( blue )
+    //                 propension( defensive )
+    //     goals:      start
+    //     ag-class:   vesna.VesnaAgent
+    // }
+
+    //agent red1:player.asl {
+    //    beliefs:    address( localhost )
+    //                port( 9085 )
+    //               team( red )
+    //               propension( defensive )
+    //    goals:      start
+     //   ag-class:   vesna.VesnaAgent
+    //}
+
+    // agent red2:player.asl {
+    //     beliefs:    address( localhost )
+    //                 port( 9086 )
+    //                 team( red )
+    //                 propension( offensive )
+    //     goals:      start
+    //     ag-class:   vesna.VesnaAgent
+    // }
+
+    // agent red3:player.asl {
+    //     beliefs:    address( localhost )
+    //                 port( 9087 )
+    //                 team( red )
+    //                 propension( offensive )
+    //     goals:      start
+    //     ag-class:   vesna.VesnaAgent
+    // }
+
+    // agent red4:player.asl {
+     //    beliefs:    address( localhost )
+     //                port( 9088 )
+      //               team( red )
+      //               propension( defensive )
+      //   goals:      start
+     //    ag-class:   vesna.VesnaAgent
+     //}
+
+    // agent red5:player.asl {
+    //     beliefs:    address( localhost )
+    //                 port( 9089 )
+    //                 team( red )
+    //                 propension( defensive )
+    //     goals:      start
+    //     ag-class:   vesna.VesnaAgent
+    // }
+
+
+}
